@@ -11,6 +11,7 @@ function App() {
   // State for loading after clicking submit
   const [loading, setLoading] = useState(false);
 
+  const handleButtonClick = () => {};
 
   return (
     <div>
@@ -25,7 +26,7 @@ function App() {
           onChange={(e) => setText(e.target.value)}
           disabled={loading}
           ></textarea>
-          <button>Submit</button>
+          <button onClick={handleButtonClick} disabled={loading}>Submit</button>
         </div>
 
       </div>
